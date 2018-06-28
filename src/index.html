@@ -27,7 +27,6 @@
         </div>
       </div>
 
-      <div id="petsRow" class="row"></div>
       <form id="mint">
         <input id="mint-id" placeholder="product id">
         <input id="mint-price" placeholder="price">
@@ -36,19 +35,31 @@
         </button>
       </form>
 
-      <div>consignor token count:
-        <div id="consignor-token-count">0</div>
-      </div>
-      <div>buyer token count:
-        <div id="buyer-token-count">0</div>
-      </div>
-
       <form id="buy">
         <input id="buy-id" placeholder="product id">
         <input id="buy-price" placeholder="price">
+        <button id="preview-button">Load Preview</button>
         <button id="buy-button">Buy Product
         </button>
       </form>
+
+      <div id="preview-spot">preview url</div>
+
+      <h3>Consignor</h3>
+      <div> Address: 
+        <span id="consignor-address">blank</span>
+      </div>
+      <div>Token Count: 
+        <span id="consignor-token-count">0</span>
+      </div>
+
+      <h3>Buyer</h3>
+      <div>Address:
+        <span id="buyer-address">blank</span>
+      </div>
+      <div>Token Count:
+        <span id="buyer-token-count">0</span>
+      </div>
  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

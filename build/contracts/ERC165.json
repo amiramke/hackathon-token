@@ -31,14 +31,14 @@
     "absolutePath": "@0xcert/ethereum-utils/contracts/utils/ERC165.sol",
     "exportedSymbols": {
       "ERC165": [
-        1812
+        1263
       ]
     },
-    "id": 1813,
+    "id": 1264,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1804,
+        "id": 1255,
         "literals": [
           "solidity",
           "^",
@@ -46,7 +46,7 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:16"
+        "src": "0:24:9"
       },
       {
         "baseContracts": [],
@@ -54,9 +54,9 @@
         "contractKind": "interface",
         "documentation": "@dev A standard for detecting smart contract interfaces. See https://goo.gl/cxQCse.",
         "fullyImplemented": false,
-        "id": 1812,
+        "id": 1263,
         "linearizedBaseContracts": [
-          1812
+          1263
         ],
         "name": "ERC165",
         "nodeType": "ContractDefinition",
@@ -64,7 +64,7 @@
           {
             "body": null,
             "documentation": "@dev Checks if the smart contract includes a specific interface.\n@notice This function uses less than 30,000 gas.\n@param _interfaceID The interface identifier, as specified in ERC-165.",
-            "id": 1811,
+            "id": 1262,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -72,16 +72,16 @@
             "name": "supportsInterface",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1807,
+              "id": 1258,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1806,
+                  "id": 1257,
                   "name": "_interfaceID",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1811,
-                  "src": "387:19:16",
+                  "scope": 1262,
+                  "src": "387:19:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -89,10 +89,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 1805,
+                    "id": 1256,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "387:6:16",
+                    "src": "387:6:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -102,20 +102,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "381:29:16"
+              "src": "381:29:9"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1810,
+              "id": 1261,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1809,
+                  "id": 1260,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1811,
-                  "src": "446:4:16",
+                  "scope": 1262,
+                  "src": "446:4:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -123,10 +123,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1808,
+                    "id": 1259,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "446:4:16",
+                    "src": "446:4:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -136,33 +136,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "445:6:16"
+              "src": "445:6:9"
             },
-            "scope": 1812,
-            "src": "355:97:16",
+            "scope": 1263,
+            "src": "355:97:9",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1813,
-        "src": "121:334:16"
+        "scope": 1264,
+        "src": "121:334:9"
       }
     ],
-    "src": "0:455:16"
+    "src": "0:455:9"
   },
   "legacyAST": {
     "absolutePath": "@0xcert/ethereum-utils/contracts/utils/ERC165.sol",
     "exportedSymbols": {
       "ERC165": [
-        1812
+        1263
       ]
     },
-    "id": 1813,
+    "id": 1264,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1804,
+        "id": 1255,
         "literals": [
           "solidity",
           "^",
@@ -170,7 +170,7 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:16"
+        "src": "0:24:9"
       },
       {
         "baseContracts": [],
@@ -178,9 +178,9 @@
         "contractKind": "interface",
         "documentation": "@dev A standard for detecting smart contract interfaces. See https://goo.gl/cxQCse.",
         "fullyImplemented": false,
-        "id": 1812,
+        "id": 1263,
         "linearizedBaseContracts": [
-          1812
+          1263
         ],
         "name": "ERC165",
         "nodeType": "ContractDefinition",
@@ -188,7 +188,7 @@
           {
             "body": null,
             "documentation": "@dev Checks if the smart contract includes a specific interface.\n@notice This function uses less than 30,000 gas.\n@param _interfaceID The interface identifier, as specified in ERC-165.",
-            "id": 1811,
+            "id": 1262,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -196,16 +196,16 @@
             "name": "supportsInterface",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1807,
+              "id": 1258,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1806,
+                  "id": 1257,
                   "name": "_interfaceID",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1811,
-                  "src": "387:19:16",
+                  "scope": 1262,
+                  "src": "387:19:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -213,10 +213,10 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 1805,
+                    "id": 1256,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "387:6:16",
+                    "src": "387:6:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
@@ -226,20 +226,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "381:29:16"
+              "src": "381:29:9"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1810,
+              "id": 1261,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1809,
+                  "id": 1260,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1811,
-                  "src": "446:4:16",
+                  "scope": 1262,
+                  "src": "446:4:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -247,10 +247,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1808,
+                    "id": 1259,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "446:4:16",
+                    "src": "446:4:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -260,20 +260,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "445:6:16"
+              "src": "445:6:9"
             },
-            "scope": 1812,
-            "src": "355:97:16",
+            "scope": 1263,
+            "src": "355:97:9",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1813,
-        "src": "121:334:16"
+        "scope": 1264,
+        "src": "121:334:9"
       }
     ],
-    "src": "0:455:16"
+    "src": "0:455:9"
   },
   "compiler": {
     "name": "solc",
@@ -281,5 +281,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-06-28T18:21:37.648Z"
+  "updatedAt": "2018-06-28T20:06:58.063Z"
 }

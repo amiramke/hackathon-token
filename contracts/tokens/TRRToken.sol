@@ -13,6 +13,7 @@ contract TRRToken is
    * @dev Mapping from NFT ID to product price
    */
   mapping (uint256 => uint256) internal idToPrice;
+  mapping (uint256 => string) internal idToData;
 
   constructor(
     string _name,
@@ -75,5 +76,27 @@ contract TRRToken is
     uint256 commission = 60;
     consignor.transfer(price * commission / 100);
     owner.transfer(price * ( 100 - commission) / 100);
+  }
+
+  function setData (
+    uint256 _tokenId,
+    string _data
+  )
+    validNFToken(_tokenId)
+    onlyOwner
+    external
+  {
+    idToData[_tokenId] = _data;
+  }
+
+  function getData (
+    uint256 _tokenId
+  )
+    view
+    validNFToken(_tokenId)
+    external
+    returns (string)
+  {
+    return idToData[_tokenId];
   }
 }

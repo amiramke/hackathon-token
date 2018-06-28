@@ -36,6 +36,7 @@ App = {
     $(document).on('click', 'button#mint-button', App.mint);
 
     $(document).on('click', 'button#buy-button', App.buy);
+    $(document).on('click', 'button#preview-button', App.preview);
   },
 
   showTokens: function(adopters, account) {;
@@ -61,16 +62,27 @@ App = {
     });
   },
 
+  preview: function(event) {
+    event.preventDefault();
+    var id = $("#buy-id")[0].value
+    App.displayUrl(id);
+  },
+
   mint: function(event) {
     event.preventDefault()
     var id = $("#mint-id")[0].value
     var price = $("#mint-price")[0].value
     var url = $("#mint-url")[0].value
+    url = "{url: " + url + "}"
+    console.log(url)
 
     App.tokenInstance.mint(App.consignor, id, {from: App.trr})
     .then(function(res){
       return App.tokenInstance.setTokenPrice(id, web3._extend.utils.toWei(price, 'ether'), { from: App.trr });
+    }).then(function(res){
+      return App.tokenInstance.setData(id, url, { from: App.trr, gas: 300000 });
     }).then(function(_meh){
+      App.displayUrl(id)
       App.refreshTokenCounts()
     })   
   },
@@ -78,11 +90,13 @@ App = {
   refreshTokenCounts: function() {
     App.tokenInstance.balanceOf(App.consignor)
       .then(function(data){
+        $("#consignor-address").text(App.consignor)
         $("#consignor-token-count").text(data.toString())
       })
 
     App.tokenInstance.balanceOf(App.buyer)
     .then(function(data){
+      $("#buyer-address").text(App.buyer)
       $("#buyer-token-count").text(data.toString())
     })
   },
@@ -95,10 +109,18 @@ App = {
 
     App.tokenInstance.buy(id, {from: App.buyer, value: web3._extend.utils.toWei(price, 'ether'), gas: 300000})
     .then(function(_meh){
+      App.displayUrl(id)
       App.refreshTokenCounts()
     });
-  }
+  },
 
+  displayUrl: function(id) {
+    App.tokenInstance.getData(id).then(function(data) {
+      $("#preview-spot").text(data);
+    }).catch(function(err) {
+      $("#preview-spot").text("Product ID Not Found");
+  });
+  }
 };
 
 $(function() {
